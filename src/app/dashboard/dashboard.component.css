@@ -1,0 +1,28 @@
+.dashboard {
+    padding-top: 70px;
+    padding-left: 280px;
+    background-color: #f1f5f8;
+    height: 100vh;
+}
+
+.dashboard-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px 25px 42px 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 10px;
+
+}
+
+@media(max-width:1200px) {
+    .dashboard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:1000px) {
+    .dashboard-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,7 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="dashboard">
+    <div class="dashboard-container">
+     <app-cart *ngFor="let c of carts " [cart] = "c"></app-cart>
+    </div>
+ </div>
